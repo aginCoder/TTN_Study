@@ -15,14 +15,13 @@ body {
 }
 
 .site-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
-    box-shadow: none;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo-img {
@@ -36,8 +35,7 @@ body {
 }
 
 .navbar {
-    background: transparent !important;
-    padding: 10px 20px;
+    padding: 12px 20px;
 }
 
 .navbar-toggler {
@@ -73,6 +71,19 @@ body {
         margin: 3px 8px;
         font-size: 10px;
     }
+}
+
+
+/* BANNER */
+
+.site-banner {
+    margin-top: 80px;
+}
+
+.site-banner img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
 }
 
 
