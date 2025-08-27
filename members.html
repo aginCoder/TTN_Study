@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành viên - CLB TTN Study</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header class="site-header d-flex justify-content-between align-items-center px-4">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="Logo" /></a>
+            </div>
+            <nav class="main-menu">
+                <a href="./index.html" class="menu-link">Trang chủ</a>
+                <a href="./thanhTuu.html" class="menu-link">Thành tựu</a>
+                <a href="./members.html" class="menu-link">Thành viên</a>
+                <a href="./album.html" class="menu-link">Hình ảnh</a>
+                <a href="./about.html" class="menu-link">Giới thiệu</a>
+            </nav>
+        </header>
+
+        <div class="page-banner" style="margin-top: 76px;">
+            <div class="banner-overlay">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h1 class="text-black display-4 mb-3">Thành viên CLB TTN Study</h1>
+                            <p class="text-black lead mb-4">Những con người tài "lanh" và "hề hước" đang cùng nhau phát triển CLB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="container">
+            <section class="mb-5">
+                <h2 class="text-center mb-4">Ban Chủ Nhiệm</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4" data-aos="fade-up">
+                        <div class="member-card text-center">
+                            <img src="./img/member/tv1.jpg" alt="Chủ nhiệm" class="rounded-circle mb-3">
+                            <h4>Trần Thế Quang</h4>
+                            <p class="text-muted">Chủ nhiệm</p>
+                            <div class="social-links mt-3">
+                                <a href="https://www.facebook.com/the.wuang.2024" class="text-primary mx-2">
+                                    <i class="fab fa-facebook fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-card text-center">
+                            <img src="./img/member/tv2.jpg" alt="Phó chủ nhiệm 1" class="rounded-circle mb-3">
+                            <h4>Trương Dạ Huyền</h4>
+                            <p class="text-muted">Phó chủ nhiệm</p>
+                            <div class="social-links mt-3">
+                                <a href="https://www.facebook.com/dahuyen.truong.98" class="text-primary mx-2">
+                                    <i class="fab fa-facebook fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-card text-center">
+                            <img src="./img/member/tv4.jpg" alt="Phó chủ nhiệm 2" class="rounded-circle mb-3">
+                            <h4>Nguyễn Thị Mai Hoa</h4>
+                            <p class="text-muted">Phó chủ nhiệm</p>
+                            <div class="social-links mt-3">
+                                <a href="https://www.facebook.com/quynhoa.204" class="text-primary mx-2">
+                                    <i class="fab fa-facebook fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-5">
+                <div class="team-section mb-5">
+                    <h2 class="text-center mb-4">Các thành viên khác</h2>
+                    <div id="members-list" class="row"></div>
+                    <div id="pagination" class="d-flex justify-content-center mt-4"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer bg-dark text-light py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Cột 1: Thông tin CLB -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-white mb-3">Về CLB TTN Study</h5>
+                        <p class="mb-2">Câu lạc bộ học tập sáng tạo dành cho những bạn trẻ đam mê khám phá tri thức và phát triển bản thân.</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-light me-3"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Cột 2: Liên kết nhanh -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-white mb-3">Liên kết nhanh</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Trang chủ</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Thành tựu</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Thành viên</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hình ảnh</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Cột 3: Thông tin liên hệ -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-white mb-3">Liên hệ với chúng tôi</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Ban mê thuột, Buon Me Thuot, Vietnam</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2"></i> 0977 571 369</li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2"></i> truongdahuyen@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="bg-light my-4">
+
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2025 CLB TTN Study. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true
+        });
+
+        const members = [{
+            img: "./img/member/tv3.jpg",
+            name: "Bùi Thanh Trí",
+            role: "Phó chủ nhiệm",
+            facebook: "https://www.facebook.com/bear.2712.1314"
+        }, {
+            img: "./img/member/tv5.jpg",
+            name: "Thảo Nguyên",
+            role: "Trưởng ban truyền thông",
+            facebook: "https://www.facebook.com/thao.nguyen.456144"
+        }, {
+            img: "./img/member/tv6.jpg",
+            name: "Quang Cường",
+            role: "Trưởng ban văn nghệ",
+            facebook: "https://www.facebook.com/cuong.nguyenquang.5836711"
+        }, {
+            img: "./img/member/tv7.jpg",
+            name: "Trần Thị Linh",
+            role: "Trưởng ban nhân sự",
+            facebook: "https://www.facebook.com/tran.linh.590958"
+        }, {
+            img: "./img/member/tv8.jpg",
+            name: "Mỹ Uyên",
+            role: "Trưởng ban nội dung",
+            facebook: "https://www.facebook.com/my.uyen.511633"
+        }, {
+            img: "./img/member/tv9.jpg",
+            name: "Thanh Vy",
+            role: "Trưởng ban hậu cần",
+            facebook: "https://www.facebook.com/Vythanh304205"
+        }, {
+            img: "./img/member/tv10.jpg",
+            name: "Thu Phương",
+            role: "Uỷ viên",
+            facebook: "https://www.facebook.com/thu.phuong.909202"
+        }, {
+            img: "./img/member/tv11.png",
+            name: "Phạm Gia Ân",
+            role: "Thư ký",
+            facebook: "https://www.facebook.com/agin25th.05"
+        }, {
+            img: "./img/member/tv12.jpg",
+            name: "Kim Phụng",
+            role: "Thành viên",
+            facebook: "https://www.facebook.com/phung.vuhakim"
+        }, {
+            img: "./img/member/tv13.jpg",
+            name: "Khánh Ly",
+            role: "Thành viên",
+            facebook: "https://www.facebook.com/khanh.ly.042005"
+        }, {
+            img: "./img/member/tv14.jpg",
+            name: "Thu Phương",
+            role: "Thành viên",
+            facebook: "https://www.facebook.com/phuong.thu.282880"
+        }, {
+            img: "./img/member/tv15.jpg",
+            name: "H Nhoa HMok",
+            role: "Thành viên",
+            facebook: "https://www.facebook.com/profile.php?id=61579140011322"
+        }, {
+            img: "./img/member/tv16.jpg",
+            name: "H Ny Ly Ayun",
+            role: "Thành viên",
+            facebook: "https://www.facebook.com/nyly.ayun"
+        }, {
+            img: "./img/member/tv17.jpg",
+            name: "Nghĩa Bùi",
+            role: "Thành viên",
+            facebook: "https://www.facebook.com/nghia.bui.267637"
+        }, {
+            img: "./img/member/tv18.jpg",
+            name: "H Thư Ayun",
+            role: "Thành viên",
+            facebook: "https://www.facebook.com/thu.ayun.967"
+        }, {
+            img: "./img/member/tv19.jpg",
+            name: "Như Gương",
+            role: "Thành viên",
+            facebook: "https://www.facebook.com/guong.tran.9843"
+        }];
+
+        const membersPerPage = 4;
+        let currentPage = 1;
+
+        function renderMembers(page) {
+            const start = (page - 1) * membersPerPage;
+            const end = start + membersPerPage;
+            const membersToShow = members.slice(start, end);
+
+            const membersList = document.getElementById('members-list');
+            membersList.innerHTML = membersToShow.map(member => `
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="member-card text-center">
+                        <img src="${member.img}" alt="Thành viên" class="rounded-circle mb-3">
+                        <h5>${member.name}</h5>
+                        <p class="text-muted">${member.role}</p>
+                        <div class="social-links mt-3">
+                            <a href="${member.facebook}" target="_blank" class="text-primary mx-2">
+                                <i class="fab fa-facebook fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(members.length / membersPerPage);
+            const pagination = document.getElementById('pagination');
+            let html = '';
+
+            html += `<button class="btn btn-outline-primary mx-1" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})">&laquo;</button>`;
+
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<button class="btn btn${i === currentPage ? '' : '-outline'}-primary mx-1" onclick="changePage(${i})">${i}</button>`;
+            }
+
+            html += `<button class="btn btn-outline-primary mx-1" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">&raquo;</button>`;
+
+            pagination.innerHTML = html;
+        }
+
+        function changePage(page) {
+            const totalPages = Math.ceil(members.length / membersPerPage);
+            if (page < 1 || page > totalPages) return;
+            currentPage = page;
+            renderMembers(currentPage);
+            renderPagination();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMembers(currentPage);
+            renderPagination();
+        });
+    </script>
+</body>
+
+</html>

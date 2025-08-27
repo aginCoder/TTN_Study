@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLB TTN Study</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header class="site-header d-flex justify-content-between align-items-center px-4">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="Logo" /></a>
+            </div>
+            <nav class="main-menu">
+                <a href="#" class="menu-link">Trang chủ</a>
+                <a href="./thanhTuu.html" class="menu-link">Thành tựu</a>
+                <a href="./members.html" class="menu-link">Thành viên</a>
+                <a href="./album.html" class="menu-link">Hình ảnh</a>
+                <a href="./about.html" class="menu-link">Giới thiệu</a>
+            </nav>
+        </header>
+        <div id="mainSlider" class="carousel slide" data-ride="carousel" data-interval="3500">
+            <ol class="carousel-indicators">
+                <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#mainSlider" data-slide-to="1"></li>
+                <li data-target="#mainSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/bg1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bg2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bg3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Trước</span>
+            </a>
+            <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Sau</span>
+            </a>
+        </div>
+        <main>
+            <!-- Giới thiệu CLB TTN Study + About 1 -->
+            <div class="section section-intro" data-aos="fade-up">
+                <h2 class="main-title text-center mb-4">Giới thiệu</h2>
+                <p class="main-desc text-center mb-5">
+                    Chào mừng bạn đến với <strong>CLB TTN Study</strong> – không gian học tập sáng tạo dành cho những bạn trẻ năng động, đam mê khám phá tri thức và phát triển bản thân!<br> Tại đây, chúng tôi không chỉ học mà còn chơi, không chỉ tiếp
+                    thu kiến thức mà còn rèn luyện kỹ năng mềm, tư duy sáng tạo và tinh thần đồng đội.<br> Hãy cùng nhau học tập, chia sẻ và trưởng thành – <strong>theo cách vui nhất có thể</strong>!
+                </p>
+
+                <!-- About 1 - Bootstrap Brain Component -->
+                <section class="py-3 py-md-5">
+                    <div class="container">
+                        <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                            <div class="col-12 col-lg-6 col-xl-5">
+                                <img class="img-fluid rounded" loading="lazy" src="./img/about.jpg" alt="About 1">
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-7">
+                                <div class="row justify-content-xl-center">
+                                    <div class="col-12 col-xl-11">
+                                        <h2 class="mb-3">Tại CLB TTN Study</h2>
+                                        <p class="lead fs-4 text-secondary mb-3">Chúng tôi tạo ra một môi trường học tập năng động, nơi các bạn trẻ có thể vừa học hỏi kiến thức, vừa vui chơi, kết nối bạn bè và phát triển kỹ năng mềm. Mục tiêu của CLB là mang đến những hoạt động thú vị, bổ ích
+                                            và gần gũi – để mỗi buổi sinh hoạt đều là một trải nghiệm đáng nhớ.</p>
+                                        <p class="mb-5">CLB TTN Study là một tập thể phát triển nhanh, luôn giữ vững giá trị cốt lõi về sự hợp tác, sáng tạo và lấy thành viên làm trung tâm. Chúng tôi không ngừng đổi mới để nâng cao chất lượng hoạt động, đem lại trải
+                                            nghiệm học tập đa chiều và bổ ích cho mọi người.</p>
+                                        <div class="row gy-4 gy-md-0 gx-xxl-5">
+                                            <div class="col-12 col-md-6">
+                                                <div class="d-flex">
+                                                    <div class="me-4 text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <h2 class="h4 mb-3">Mô Hình Linh Hoạt</h2>
+                                                        <p class="text-secondary mb-0">Chúng tôi xây dựng phương pháp học tập sáng tạo, linh hoạt, phù hợp với nhiều phong cách và mục tiêu của các bạn trẻ.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="d-flex">
+                                                    <div class="me-4 text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <h2 class="h4 mb-3">Tinh Thần Nhiệt Huyết</h2>
+                                                        <p class="text-secondary mb-0">Chúng tôi truyền cảm hứng học tập thông qua hoạt động vui nhộn, sáng tạo và không bao giờ nhàm chán.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Thành tựu của CLB -->
+            <div class="section section-achievement" data-aos="fade-up">
+                <div class="container">
+                    <h2 class="text-center mb-4">Thành tựu CLB TTN Study</h2>
+                    <p class="text-center mb-5 text-secondary">
+                        Hành trình của chúng tôi được đánh dấu bằng những trải nghiệm tuyệt vời, các hoạt động ý nghĩa và sự phát triển không ngừng của các thành viên.
+                    </p>
+
+                    <div class="row">
+                        <!-- Thành tựu 1 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="achievement-box text-center">
+                                <div class="achievement-icon">📚</div>
+                                <h5>50+ Buổi Gặp Mặt</h5>
+                                <p class="text-secondary">Tổ chức hơn 50 buổi gặp mặt theo chủ đề, giúp các bạn trao đổi kiến thức và hỗ trợ nhau học tập hiệu quả.</p>
+                            </div>
+                        </div>
+
+                        <!-- Thành tựu 2 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="achievement-box text-center">
+                                <div class="achievement-icon">🏆</div>
+                                <h5>Đạt Giải Cuộc Thi Học Thuật</h5>
+                                <p class="text-secondary">CLB đã tham gia và đạt thành tích cao trong các cuộc thi học thuật cấp trường và cấp thành phố.</p>
+                            </div>
+                        </div>
+
+                        <!-- Thành tựu 3 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="achievement-box text-center">
+                                <div class="achievement-icon">🎉</div>
+                                <h5>10+ Sự Kiện Ngoại Khóa</h5>
+                                <p class="text-secondary">Tổ chức nhiều hoạt động dã ngoại, teambuilding và workshop phát triển kỹ năng mềm cho thành viên.</p>
+                            </div>
+                        </div>
+
+                        <!-- Thành tựu 4 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="achievement-box text-center">
+                                <div class="achievement-icon">🤝</div>
+                                <h5>Kết Nối 100+ Thành Viên</h5>
+                                <p class="text-secondary">Một cộng đồng trẻ trung, tích cực với hơn 100 thành viên cùng học hỏi và phát triển bản thân mỗi ngày.</p>
+                            </div>
+                        </div>
+
+                        <!-- Thành tựu 5 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="achievement-box text-center">
+                                <div class="achievement-icon">💡</div>
+                                <h5>Khởi Xướng Dự Án Sáng Tạo</h5>
+                                <p class="text-secondary">CLB đã tổ chức các dự án nhỏ về học tập, chia sẻ kiến thức, tạo cảm hứng và động lực học tập cho các bạn học sinh.</p>
+                            </div>
+                        </div>
+
+                        <!-- Thành tựu 6 -->
+                        <div class="col-12 col-sm-6 col-lg-4 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="achievement-box text-center">
+                                <div class="achievement-icon">🌟</div>
+                                <h5>Được Nhà Trường Ghi Nhận</h5>
+                                <p class="text-secondary">CLB được nhà trường công nhận là một trong những câu lạc bộ hoạt động tích cực và hiệu quả nhất trong năm học.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thành viên của CLB -->
+            <div class="section section-member" data-aos="fade-up">
+                <h2 class="main-title text-center mb-4">Thành viên CLB TTN Study</h2>
+                <p class="main-desc text-center mb-5">
+                    CLB hiện có hơn 50 thành viên, bao gồm các bạn học sinh, sinh viên và các chuyên gia trẻ. Mỗi thành viên đều đóng góp tích cực vào sự phát triển chung của CLB.
+                </p>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="member-box text-center p-3 shadow-sm h-100">
+                            <img src="./img/member/tv1.jpg" alt="Nguyễn Văn A" class="member-avatar mb-3">
+                            <h5 class="mb-1">Trần Thế Quang</h5>
+                            <p class="text-secondary mb-0">Chủ nhiệm</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="member-box text-center p-3 shadow-sm h-100">
+                            <img src="./img/member/tv2.jpg" alt="Trần Thị B" class="member-avatar mb-3">
+                            <h5 class="mb-1">Trương Dạ Huyền</h5>
+                            <p class="text-secondary mb-0">Phó chủ nhiệm</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="member-box text-center p-3 shadow-sm h-100">
+                            <img src="./img/member/tv4.jpg" alt="Lê Văn C" class="member-avatar mb-3">
+                            <h5 class="mb-1">Nguyễn Thị Mai Hoa</h5>
+                            <p class="text-secondary mb-0">Phó chủ nhiệm</p>
+                        </div>
+                    </div>
+                    <div class="w-100 text-center mt-3">
+                        <a href="./members.html">
+                            <button class="btn btn-primary btn-lg xem-them-btn" type="button">
+                                Xem thêm
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hình ảnh về CLB -->
+            <div class="section section-gallery" data-aos="fade-up">
+                <h2 class="main-title text-center mb-4">Hình ảnh hoạt động CLB</h2>
+                <p class="main-desc text-center mb-4">
+                    Một số khoảnh khắc nổi bật trong các hoạt động của CLB TTN Study.
+                </p>
+                <div class="gallery-frame">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="./img/bg1.jpg" alt="Hoạt động 1">
+                            <div class="gallery-overlay"><span>Hoạt động 1</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./img/pic/pic1.jpg" alt="Hoạt động 2">
+                            <div class="gallery-overlay"><span>Hoạt động 2</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./img/pic/pic2.jpg" alt="Hoạt động 3">
+                            <div class="gallery-overlay"><span>Hoạt động 3</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./img/pic/pic3.jpg" alt="Hoạt động 4">
+                            <div class="gallery-overlay"><span>Hoạt động 4</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./img/pic/pic2.jpg" alt="Hoạt động 5">
+                            <div class="gallery-overlay"><span>Hoạt động 5</span></div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./img/pic/pic4.jpg" alt="Hoạt động 6">
+                            <div class="gallery-overlay"><span>Hoạt động 6</span></div>
+                        </div>
+                    </div>
+                    <div class="w-100 text-center mt-4">
+                        <button class="btn btn-primary btn-lg xem-them-btn" type="button">
+                            Xem thêm
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Liên hệ -->
+            <div class="section section-contact" data-aos="fade-up">
+                <h2 class="main-title">Liên hệ</h2>
+                <div class="contact-box p-3 border rounded shadow-sm bg-light">
+                    <p><strong>Email:</strong> truongdahuyen@gmail.com</p>
+                    <p><strong>Hotline:</strong> 0977 571 369</p>
+                    <p><strong>Địa chỉ:</strong> Ban mê thuột, Buon Me Thuot, Vietnam</p>
+                </div>
+            </div>
+        </main>
+        <footer class="site-footer bg-dark text-light py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Cột 1: Thông tin CLB -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-white mb-3">Về CLB TTN Study</h5>
+                        <p class="mb-2">Câu lạc bộ học tập sáng tạo dành cho những bạn trẻ đam mê khám phá tri thức và phát triển bản thân.</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-light me-3"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Cột 2: Liên kết nhanh -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-white mb-3">Liên kết nhanh</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Trang chủ</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Thành tựu</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Thành viên</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hình ảnh</a></li>
+                            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Cột 3: Thông tin liên hệ -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-white mb-3">Liên hệ với chúng tôi</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Ban mê thuột, Buon Me Thuot, Vietnam</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2"></i> 0977 571 369</li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2"></i> truongdahuyen@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="bg-light my-4">
+
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2025 CLB TTN Study. Tất cả quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true
+        });
+    </script>
+    <script src="./script.js "></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js "></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
