@@ -21,3 +21,17 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var navbarCollapse = document.getElementById("navbarNav");
+
+    window.addEventListener("scroll", function() {
+        if (navbarCollapse.classList.contains("show")) {
+            // Nếu menu đang mở thì đóng lại khi scroll
+            var collapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            collapse.hide();
+        }
+    });
+});
